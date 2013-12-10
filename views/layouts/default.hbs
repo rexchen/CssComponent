@@ -4,9 +4,13 @@
     <title>CSS Component</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="stylesheets/main.css">
+    {{{block "pageStyles"}}}
 </head>
 <body>
-    {{{body}}}
-    <script src="main.js"></script>
+
+{{{body}}}
+
+<script src="javascripts/main.js"></script>
+{{{block "pageScripts"}}}
 </body>
 </html>
