@@ -8,3 +8,9 @@ exports.index = function(req, res){
         title: 'Express' 
     });
 };
+
+exports.pinterest = function(req, res){
+    res.render('pinterest', { 
+        title: 'pinterest' 
+    });
+};
