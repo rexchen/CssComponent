@@ -27,8 +27,7 @@ app.use(express.methodOverride());
 app.use(app.router);
 
 app.use(compass({
-    mode: 'compact', 
-    cache: false,
+    mode: 'compact',
     comments: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
