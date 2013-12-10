@@ -25,9 +25,13 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(compass({mode: 'compact', comments: true}));
+app.use(compass({
+    mode: 'compact', 
+    cache: false,
+    comments: true
+}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
