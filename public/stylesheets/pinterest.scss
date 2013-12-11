@@ -1,11 +1,27 @@
-
+@import 'compass';
 .button {
     
     &.pinterest {
+        @include background(linear-gradient( #fff, #f0f0f0 ));
         border-radius: 3px;
         border: 1px solid #ccc;
-        background: #000;
-        padding: 10px;
+        padding: 5px 10px;
         color: #fff;
+        text-align: center;
+        text-shadow: 0 1px #fff;
+        outline: none;
+        cursor: pointer;
+        i {
+            color: #b0b0af;
+            font-size: 18px;
+        }
+        &:hover {
+            @include background(linear-gradient( #e63d45, #c11a22 ));
+            border: 1px solid #920c12;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            i {
+                color: #fff;
+            }
+        }
     }
 }
